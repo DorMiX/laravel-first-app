@@ -5,7 +5,7 @@
     <div id="wrapper">
         <div class="container">
             <h2>List of Articles</h2>
-            <span class="byline">by ID</span>
+            <span class="byline">from latest to oldest</span>
         </div>
 
         <div id="wrapper">

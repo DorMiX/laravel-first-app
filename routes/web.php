@@ -27,14 +27,7 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/articles', function () {
-    $articles = App\Article::all();
-
-    return view('articles', [
-        'articles' => $articles
-    ]);
-});
-
+Route::get('/articles', 'ArticlesController@index');
 Route::get('/articles/{article}', 'ArticlesController@show');
 
 // Route::get('/test', function () {
