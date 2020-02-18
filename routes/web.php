@@ -27,6 +27,8 @@ Route::get('/about', function () {
     ]);
 });
 
+Route::get('/articles/{article}', 'ArticlesController@show');
+
 // Route::get('/test', function () {
 //     return view('test', [
 //         'name' => request('name')
