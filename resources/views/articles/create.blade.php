@@ -14,21 +14,31 @@
                 <div class="field">
                     <label for="" class="label">Title</label>
                     <div class="control">
-                        <input type="text" name="title" id="title" class="input">
+                        <input
+                            type="text" name="title" id="title"
+                            class="input @error ('title') is-danger @enderror"
+                            value="{{ old('title') }}">
+                        @error ('title')
+                            <p class="help is-danger">{{ $errors->first('title') }}</p>
+                        @enderror
                     </div>
                 </div>
 
                 <div class="field">
                     <label for="" class="label">Excerpt</label>
                     <div class="control">
-                        <textarea name="excerpt" id="excerpt" class="textarea"></textarea>
+                        <textarea name="excerpt" id="excerpt" class="textarea {{ $errors->has('excerpt') ? 'is-danger' : '' }}">{{ old('excerpt') }}</textarea>
+                        @if ($errors->has('excerpt'))
+                            <p class="help is-danger">{{ $errors->first('excerpt') }}</p>
+                        @endif
                     </div>
                 </div>
 
                 <div class="field">
                     <label for="" class="label">Body</label>
                     <div class="control">
-                        <textarea name="body" id="body" class="textarea"></textarea>
+                        <textarea name="body" id="body" class="textarea {{ $errors->has('body') ? 'is-danger' : '' }}">{{ old('body') }}</textarea>
+                        <p class="help is-danger">{{ $errors->first('body') }}</p>
                     </div>
                 </div>
 
