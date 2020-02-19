@@ -25,4 +25,29 @@ class ArticlesController extends Controller
             'article' => $article
         ]);
     }
+
+    public function create($value='')
+    {
+        // code...
+    }
+
+    public function store($value='')
+    {
+        // code...
+    }
+
+    public function edit($value='')
+    {
+        // code...
+    }
+
+    public function update($value='')
+    {
+        // code...
+    }
+
+    public function destroy($value='')
+    {
+        // code...
+    }
 }
