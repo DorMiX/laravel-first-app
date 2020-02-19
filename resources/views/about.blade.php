@@ -1,8 +1,6 @@
 @extends('simplework')
 
 @section('content')
-
-
     <div id="wrapper">
     	<div id="page" class="container">
     		<div id="content">
@@ -46,5 +44,4 @@
     		</div>
     	</div>
     </div>
-
 @endsection

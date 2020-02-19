@@ -1,7 +1,6 @@
 @extends('simplework')
 
 @section('content')
-
     <div id="wrapper">
         <div class="container">
             <h2>List of Articles</h2>
@@ -21,5 +20,4 @@
         	</div>
         </div>
     </div>
-
 @endsection
