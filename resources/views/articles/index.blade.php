@@ -1,6 +1,6 @@
 @extends('simplework')
 
-@section('content-about')
+@section('content')
 
     <div id="wrapper">
         <div class="container">

@@ -28,12 +28,22 @@ class ArticlesController extends Controller
 
     public function create($value='')
     {
-        // code...
+        return view('articles.create');
     }
 
     public function store($value='')
     {
-        // code...
+        // dump(request()->all());
+        $article = new Article();
+
+        $article->title=request('title');
+        $article->excerpt=request('excerpt');
+        $article->body=request('body');
+
+        $article->save();
+
+        return redirect('/articles');
+
     }
 
     public function edit($value='')
